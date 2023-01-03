@@ -20,7 +20,11 @@ CSS
 JavaScript
 
 
-Vista de escritorio: ![desktop](https://user-images.githubusercontent.com/103849449/210427325-8f95c7e8-9569-42bd-8ba4-3199c0af225f.jpg)
+Vista de escritorio: 
+
+![desktop](https://user-images.githubusercontent.com/103849449/210427325-8f95c7e8-9569-42bd-8ba4-3199c0af225f.jpg)
 
 
-Vista en mobile: ![tablet](https://user-images.githubusercontent.com/103849449/210427350-9afe94cc-2a70-4973-b02e-a80f3461b497.jpg)
+Vista en mobile: 
+
+![tablet](https://user-images.githubusercontent.com/103849449/210427350-9afe94cc-2a70-4973-b02e-a80f3461b497.jpg)
