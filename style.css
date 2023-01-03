@@ -1,5 +1,5 @@
 body {
-    background-image: url("/imgs/stars_glare_space_black_sky_background_4k_hd_galaxy.jpg");
+    background-image: url("imgs/stars_glare_space_black_sky_background_4k_hd_galaxy.jpg");
     background-size: 130%;
     background-color: #050505;
     font-family: 'Inter';
@@ -213,7 +213,7 @@ p i {
     border-radius: 32px;
     margin-right: 80px;
     overflow: hidden;
-    background-image: url("/imgs/nuevo3.png");
+    background-image: url("imgs/nuevo3.png");
     background-size: 400px;
     background-position: center;
     background-repeat: no-repeat, repeat;
