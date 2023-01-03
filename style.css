@@ -1,0 +1,572 @@
+body {
+    background-image: url("/imgs/stars_glare_space_black_sky_background_4k_hd_galaxy.jpg");
+    background-size: 130%;
+    background-color: #050505;
+    font-family: 'Inter';
+}
+
+.cuerpo {
+    width: 100%;
+    height: 1024px;
+    position: absolute;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 170px;
+    background-color: rgba(53, 52, 52, 0.121);
+}
+
+.encabezado {
+    margin-bottom: 20px;
+}
+
+.logoAlura {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+}
+
+.titulo_logo {
+    color: rgb(29, 182, 216);
+    margin-left: 150px;
+    margin-top: -80px;
+    font-family: 'Gugi', cursive;
+    
+}
+
+p strong {
+    text-shadow: 0 0 34px #fff;
+    font-size: 28px;
+    color: rgb(236, 232, 47);
+    margin-right: 1px;
+}
+
+.introduccion {
+    position: relative;
+    margin-bottom: 20px;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.303);
+    padding: 0 6px;
+}
+
+.introduccion p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.introduccion p:last-child {
+    font-size: 20px;
+    color: #9bdf2e;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count:calc(10s);
+
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Codificador */
+
+.codificador {
+    width: 70%;
+}
+
+.texto-ingresado {
+    background: #f3f5fc00;
+    width: 680px;
+    height: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 140px;
+    margin-left: 140px;
+    border: none;
+    outline: none;
+    font-family: 'Gugi', cursive;
+    font-style: normal;
+    font-size: 32px;
+    color: #9bdf2e;
+}
+
+.texto-ingresado::placeholder{
+    color: rgb(236, 232, 47);
+    font-size: 26px;
+}
+
+.contenedor-botones, .contenedor-copiar {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* Botones */
+
+a {
+	position: relative;
+	display: inline-block;
+	padding: 25px 30px;
+	margin: 0 20px;
+	color: #03e9f4;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+}
+
+a:nth-child(1) {
+	filter: hue-rotate(290deg);
+}
+
+a:nth-child(3) {
+	filter: hue-rotate(110deg);
+}
+
+a:hover {
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 200px #03e9f4;
+}
+
+a span {
+	position: absolute;
+	display: block;
+}
+
+a span:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #03e9f4);
+	animation: animate1 1s linear infinite;
+}
+
+.aviso, .mensaje {
+    margin-left: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    color: #abf615;
+}
+
+p i {
+    margin-right: 10px;
+    font-size: 20px;
+    text-shadow: 0 0 24px #fff;
+    color: #03e9f4;
+}
+
+/* Decodificador */
+
+.decodificador {
+    background: #ffffff30;
+    width: 400px;
+    height: 750px;
+    border-radius: 32px;
+    margin-right: 80px;
+    overflow: hidden;
+    background-image: url("/imgs/nuevo3.png");
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc13;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+}   
+
+.contenedor-imagen img {
+    width: 100px;
+    padding-top: 100px;   
+}
+
+.contenedor-texto {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gugi', cursive;
+}
+
+.h2Titulo {
+    width: 100%;
+    height: 20%;
+    font-size: 24px;
+    color: #9fe223;
+    text-shadow: 0 0 24px #fff;
+}
+
+.instruccion {
+    width: 100%;
+    height: 20%;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.texto-copiado {
+    background-color: #9bdf2e00;
+    margin-top: 32px;
+    padding: 100px 20px 0;
+    width: 100%;
+    height: 587px;
+    font-family: 'Gugi', cursive;
+    font-size: 22px;
+    color: #42ec42;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.copiar {
+    margin: auto;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+}
+
+.ocultar {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: #495057;
+    font-size: 12px;
+    background-color: black;
+}
+
+.footer-info {
+    background-color: rgb(23, 23, 23);
+    width: 100%;
+    margin-bottom: -20px;
+    margin-left:-10px;
+    display: flex;    
+}
+
+.footer-info img {
+    height: 140px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.alura {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    color: rgb(236, 232, 47);
+}
+
+.bajada {
+    width: 50%;
+    font-size: 20px;
+    text-shadow: 0 0 34px #fff; 
+    color: rgb(29, 182, 216);
+    display: inline-block;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.footer-info h4 strong {
+    text-shadow: 0 0 34px #fff;
+    font-size: 28px;
+    color: rgb(236, 232, 47);
+    margin-right: 1px;
+}
+
+.ultima-barra {
+    background-color: black;
+    margin-left:-10px;
+    height: 40px;
+}
+
+.texto_footer {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 850px) {
+
+    .body {
+        background-size: 100%;
+    }
+
+    .encabezado {
+        margin-top: -20px;
+        position: relative;
+        width: 100%;
+    }
+
+    .titulo_logo {
+        font-size: 14px;
+        margin-top: -100px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .introduccion p {
+        font-size: 14px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .codificador {
+        width: 100%;
+    }
+
+    .decodificador {
+        width: 100%;
+        margin: 0;
+    }
+
+    .texto-ingresado {
+        margin-left: 30px;
+        margin-top: 10px;
+        display: inline;
+        position: relative;
+        margin: 0 auto;
+        height: 200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        display: block;
+    }
+
+    .texto-copiado {
+        position: relative;
+        margin: 20px auto;
+        padding: 0;
+        height: 600px;
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+	    position: relative;
+	    display: inline;
+	    padding: 25px 30px;
+	    margin: -100px 20px;
+        z-index: 1;
+    } 
+
+    .btncodificar {
+        position: absolute;
+        display: inline-block;
+        margin-right: 200px;
+    }
+
+    .btndecodificar {
+        position: absolute;
+        display: inline-block;
+        margin-left: -200px;
+    }
+
+    .copiar {
+        position: relative;    
+    }
+
+    #inicio {
+        position: absolute;
+    }
+
+    .contenedor-botones {
+        padding: 0;
+        display: block;
+        position: relative;
+        margin: 200px;
+    }
+
+    .contenedor-copiar {
+        padding: 0;
+        position: relative;
+    }
+
+    .aviso {
+        margin-left: 0px;
+        padding-right: 10px;
+        text-align: center;
+        position: relative;
+        margin-top: 100px;    
+    }
+
+    .mensaje {
+        margin-left: 0px;
+        padding-right: 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    #resultado {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .decodificador {
+        background-repeat: no-repeat, no-repeat;
+        width: 100%;
+        position: absolute;
+    } 
+
+    .bajada {
+        height: 200px;
+        margin-bottom: 200px;
+    }
+
+    footer {
+        margin-top: 450px;
+    }
+
+    .footer-info {
+        margin-left: -10px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .footer-info img {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .bajada {
+        margin-top: -40px;
+        height: 100px; 
+    }
+
+    .alura {
+        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 50px;
+        width: 90%; 
+    }
+
+    .ultima-barra {
+        height: 150px;
+        padding: 20px;      
+    }
+}
+
+@media (max-width: 520px) {
+
+    .encabezado {
+        margin-top: -20px;
+        position: relative;
+        width: 80%;
+    }
+
+    .titulo_logo {
+        font-size: 14px;
+        margin-top: -120px;
+        width: 60%;
+    }
+
+    .btncodificar {
+        position: absolute;
+        display: inline-block;
+        margin-right: 200px;
+        padding-top: 10px;
+    }
+
+    .btndecodificar {
+        position: absolute;
+        display: inline-block;
+        margin-left: -200px;
+        padding-top: 10px;
+    }
+
+    .copiar {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    footer {
+        margin-top: 500px;
+    }
+
+    .alura {
+        height: 200px;
+        margin-top: 0;
+        margin-left: 30px; 
+        width: 100%;
+        
+    }
+}
+
+
+
+

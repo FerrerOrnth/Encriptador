@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Academia de lenguas universales y relaciones alienigenas</title>
+        <!-- <link rel="stylesheet" href="reset.css"> -->
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="imgs/fav.png"/>
+        <script src="https://kit.fontawesome.com/fe3f6d7c1b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="cuerpo">
+
+            <header>
+                <div class="encabezado">
+                    <img class="logoAlura" src="imgs/Logoalien2.png" alt="Logo Alura">
+                    <p class="titulo_logo"><strong>a</strong>cademia de <strong>l</strong>enguas <strong>u</strong>niversales y <strong>r</strong>elaciones <strong>a</strong>lienígenas</p>
+                </div>
+            </header>
+            <div class="introduccion">
+                <p id="texto"></p>
+                <p class="parpadea text">Utilice este instrumento con discreción, estamos vigilando.</p>
+            </div>
+            <main>
+                
+                <section class="codificador">
+                    <textarea class="texto-ingresado" id='text' placeholder ="Ingrese el texto a traducir aquí: "></textarea>
+                    <div class="contenedor-botones">
+                        <a class="btncodificar" onclick="btnCodificar()">
+                            <span></span>
+                            Alienglish
+                        </a>
+                        <a class="btndecodificar" onclick="btnDecodificar()">
+                            <span></span>
+                            Español
+                        </a>
+                    </div>
+                    <span></span>
+                    <p class="aviso"><i class="fa-solid fa-triangle-exclamation"></i>Utilice sólo letras minúsculas y sin acentos</p>
+                    <p class="mensaje"><i class="fa-solid fa-triangle-exclamation"></i><i class="fa-solid fa-triangle-exclamation"></i>ail ufatsair enterstenter traidufatctoberr poberr primesmenterrai venterz enterl hufatmainober prenterstai cobernsenterntimesmimesenterntober pairai senterr aibdufatcimesdober toberdobers lobers mairtenters denter 14 ai 21</p>
+                </section>
+        
+                <section class="decodificador">
+                    <div id="inicio">
+                        <div class="contenedor-imagen">
+                            <img src="/imgs/int.png" alt="Signo de interrogación">
+                        </div>
+                        <div class="contenedor-texto">
+                            <h2 class="h2Titulo">Ningún mensaje ha sido encontrado</h2>
+                            <p class="instruccion">El humano debe ingresar el texto a traducir entre idiomas en el campo a la izquierda de la pantalla.</p>
+                        </div>
+                    </div>
+                    <div id="resultado">
+                        <textarea class="texto-copiado"></textarea>
+                        <div class="contenedor-copiar">
+                            <a class="copiar" onclick="btnCopiar()">
+                                <span></span>
+                                copiar
+                            </a>
+                        </div>
+                    </div>    
+                </section>        
+            </main>
+        
+            <footer>
+                <div class="footer-info">
+                    <img src="/imgs/Logoalien2.png">
+                    <div class="alura">
+                        <span><h3>alura</h3></span>
+                        <div class="bajada">
+                            <span><h4><strong>a</strong>cademia de <strong>l</strong>enguas <strong>u</strong>niversales y <strong>r</strong>elaciones <strong>a</strong>lienígenas</h4></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ultima-barra">
+                    <p class="texto_footer">&copy Desarrollado por Claudio Ferrer Ornth para el Challenge One Codificador, grupo 4 de Alura Latam 2022.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
