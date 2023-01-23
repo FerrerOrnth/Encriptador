@@ -22,6 +22,7 @@ header {
 
 .encabezado {
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .logoAlura {
@@ -128,6 +129,7 @@ main {
     font-style: normal;
     font-size: 32px;
     color: #9bdf2e;
+    text-shadow: 0 0 20px rgb(22, 1, 1);
 }
 
 .texto-ingresado::placeholder{
@@ -266,6 +268,7 @@ p i {
     font-family: 'Gugi', cursive;
     font-size: 22px;
     color: #42ec42;
+    text-shadow: 4px 4px 34px black;
     border: none;
     outline: none;
     box-sizing: border-box;
