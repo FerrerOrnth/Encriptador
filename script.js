@@ -4,7 +4,29 @@ const textoCopiado = document.querySelector(".texto-copiado");
 
 var signo = document.querySelector(".contenedor-imagen");
 
-var textoSigno = document.querySelector(".contenedor-texto")
+var textoSigno = document.querySelector(".contenedor-texto");
+
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+      mapping[ from.charAt( i ) ] = to.charAt( i );
+ 
+  return function( str ) {
+      var ret = [];
+      for( var i = 0, j = str.length; i < j; i++ ) {
+          var c = str.charAt( i );
+          if( mapping.hasOwnProperty( str.charAt( i ) ) )
+              ret.push( mapping[ c ] );
+          else
+              ret.push( c );
+      }      
+      return ret.join( '' );
+  }
+ 
+})();
 
 
 //botones
@@ -40,7 +62,7 @@ function codificar(stringCodigo) {
             stringCodigo = stringCodigo.replaceAll(codigo[i][0],codigo[i][1])
         }
     }
-    return stringCodigo;
+    return normalize(stringCodigo);
 }
 
 //Decodificador
@@ -62,10 +84,10 @@ function decodificar(stringDecodificado) {
             (codigo[i][1],codigo[i][0])
         }
     }
-    return stringDecodificado;
+    return normalize(stringDecodificado);
 }
 
-// Ocultar
+// Ocultar imagen
 
 function ocultar(){
     signo.classList.add("ocultar");
@@ -81,8 +103,10 @@ function btnCopiar(){
   alert("Copiado")
   
   }
+  
 
-// function([string1],target id)    
+// Texto que va apareciendo de ambientación
+
 consoleText(['Durante eones los alienígenas hemos estado vigilando el planeta tierra. Al ver aparecer a la especie humana comenzamos a evaluar si debíamos hacer contacto...Finalmente decidimos facilitar esta herramienta a la humanidad para traducir mensajes del Español a nuestro idioma y viceversa y estar así en contacto directo y en vivo.'], 'texto');
 
 function consoleText(words, id, colors) {
